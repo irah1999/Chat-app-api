@@ -70,7 +70,7 @@ php artisan migrate
 ### 7.To generate new Reverb credentials:
 
 ```bash
-php artisan reverb:credentials
+php artisan reverb:install
 ```
 
 ### Ensure the following configurations are correct:
@@ -89,6 +89,7 @@ BROADCAST_DRIVER=reverb
 CACHE_DRIVER=file
 QUEUE_CONNECTION=database
 SESSION_DRIVER=file
+BROADCAST_DRIVER=reverb
 
 REVERB_APP_ID=your-app-id
 REVERB_APP_KEY=your-app-key
