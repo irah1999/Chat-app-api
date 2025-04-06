@@ -73,8 +73,9 @@ php artisan migrate
 php artisan reverb:install
 ```
 
-### Ensure the following configurations are correct:
+### Ensure the following environment variables are present and correctly configured in your .env file:
 
+```env
 APP_NAME="Laravel Chat App"
 APP_URL=http://localhost
 
@@ -97,6 +98,7 @@ REVERB_HOST=127.0.0.1
 REVERB_PORT=6001
 
 JWT_SECRET=your-generated-jwt-secret
+```
 
 
 ### 8.Then Start the reverb
