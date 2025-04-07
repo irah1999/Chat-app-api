@@ -60,7 +60,7 @@ class GroupChatRepository implements GroupChatRepositoryInterface
 
     public function getMessages(Request $request)
     {
-        $limit = $request->limit ?? 10;
+        $limit = $request->limit ?? 20;
         $page = ($request->page ?? 1) - 1;
         $offset = $page * $limit;
         $from = Auth::id();
